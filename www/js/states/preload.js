@@ -8,12 +8,11 @@ GAME.Preload.prototype = {
         this.preloadBar.anchor.set(0.5);
         this.load.setPreloadSprite(this.preloadBar);
 
-        this.load.spritesheet('tile:floor', 'images/tiles/dungeon_floor.png', 160, 120);
-        this.load.spritesheet('tile:ceiling', 'images/tiles/dungeon_ceiling.png', 160, 120);
-        this.load.spritesheet('tile:wall', 'images/tiles/dungeon_wall.png', 160, 120);
+        this.load.spritesheet('tile:dungeon', 'images/tiles/dungeon.png', 24, 16);
         this.load.image('tile:blank', 'images/tiles/blank.png');
-        this.load.image('tile:player', 'images/tiles/player.png');
-
+        this.load.image('tile:hover', 'images/tiles/hover.png');
+        this.load.image('tile:ladder', 'images/tiles/ladder.png');
+        this.load.image('tile:minimap', 'images/tiles/minimap.png');
 
         this.load.bitmapFont('font:guiOutline', 'fonts/guiOutline.png', 'fonts/guiOutline.xml');
         this.load.bitmapFont('font:gui', 'fonts/gui.png', 'fonts/gui.xml');
